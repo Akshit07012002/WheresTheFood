@@ -6,8 +6,11 @@ import com.example.wheresthefood.MainActivity;
 import com.example.wheresthefood.R;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +21,7 @@ public class SignInActivity extends AppCompatActivity {
 
     EditText user, pass;
     Button signIn;
+    CheckBox checkBox;
 
     AuthDBHelper DB;
 
@@ -29,6 +33,9 @@ public class SignInActivity extends AppCompatActivity {
         user = (EditText) findViewById(R.id.username1);
         pass = (EditText) findViewById(R.id.password1);
         signIn = (Button) findViewById(R.id.buttonSignIn);
+        checkBox = (CheckBox) findViewById(R.id.checkBox);
+
+
 
         DB = new AuthDBHelper(this);
 
@@ -51,6 +58,13 @@ public class SignInActivity extends AppCompatActivity {
                         Toast.makeText(SignInActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                 }
             }
+        });
+
+        checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if(!isChecked)
+                pass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+            else
+                pass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
         });
     }
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/my_red"
     android:orientation="vertical"
     tools:context=".OrderActivity">
 
@@ -24,8 +25,8 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/my_blue"
-        android:backgroundTint="@color/my_blue"
+        android:background="@color/my_red"
+        android:backgroundTint="@color/my_red"
         android:onClick="backHome"
         android:text="HOME" />
 </LinearLayout>

@@ -18,6 +18,8 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        getSupportActionBar().hide();
+
         toSignUp = (Button) findViewById(R.id.toSignUp);
         toSignIn = (Button) findViewById(R.id.toSignIn);
 
