@@ -76,7 +76,7 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
                 new AlertDialog.Builder(context)
                         .setTitle("Delete Item")
                         .setMessage("Are you sure you want to remove this item?")
-                        .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 DBHelper helper = new DBHelper(context);
@@ -93,6 +93,7 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 Intent intent = new Intent(context,OrderActivity.class);
                                 context.startActivity(intent);
+
                             }
                         })
                         .show();

@@ -102,6 +102,7 @@ public class DetailActivity extends AppCompatActivity {
                         Toast.makeText(DetailActivity.this, "Failed to Update :(", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(DetailActivity.this,OrderActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             });
         }

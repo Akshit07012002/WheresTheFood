@@ -20,14 +20,13 @@ import java.util.ArrayList;
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewholder>{
 
     ArrayList<MainModel> list;
+    Context context;
 
     public MainAdapter(ArrayList<MainModel> list, Context context) {
         this.list = list;
         this.context = context;
     }
-
-    Context context;
-
+    
 
     @NonNull
     @Override
