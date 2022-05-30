@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.wheresthefood.DatabaseHelpers.DBHelper;
 import com.example.wheresthefood.databinding.ActivityDetailBinding;
 
 public class DetailActivity extends AppCompatActivity {

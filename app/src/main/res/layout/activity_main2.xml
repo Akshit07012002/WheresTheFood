@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+tools:context=".AuthPages.MainActivity2">
+
+
+    <Button
+        android:id="@+id/toSignUp"
+        android:layout_width="326dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="443dp"
+        android:backgroundTint="@color/my_blue"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        app:cornerRadius="15dp" />
+
+    <Button
+        android:id="@+id/toSignIn"
+        android:layout_width="326dp"
+        android:layout_height="89dp"
+        android:layout_below="@+id/toSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/my_blue"
+        android:text="Sign In"
+        android:textSize="16dp"
+        app:cornerRadius="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-17dp"
+        app:srcCompat="@drawable/ract" />
+
+</RelativeLayout>

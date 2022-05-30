@@ -1,4 +1,4 @@
-package com.example.wheresthefood;
+package com.example.wheresthefood.DatabaseHelpers;
 
 import android.content.ContentValues;
 import android.content.Context;

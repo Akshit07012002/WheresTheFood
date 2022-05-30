@@ -1,7 +1,6 @@
 package com.example.wheresthefood.Adapters;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,9 +14,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wheresthefood.DBHelper;
+import com.example.wheresthefood.DatabaseHelpers.DBHelper;
 import com.example.wheresthefood.DetailActivity;
-import com.example.wheresthefood.MainActivity;
 import com.example.wheresthefood.Models.OrdersModel;
 import com.example.wheresthefood.OrderActivity;
 import com.example.wheresthefood.R;
